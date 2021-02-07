@@ -8,65 +8,52 @@
 /*****          SIDEBAR          *****/
 /*************************************/
 
-#sidebar {
+#sidebar_menu {
     transition: all 0.3s;
-    margin-left:0;
-    margin-right:0;
-    min-height: 100vh;
     background-color: #333;
-    padding: 0;
 }
 
-#sidebar .list-group a {
-    height: 50px;
+.sidebar_menu_title {
     color: white;
+    background-color: #333;
 }
 
-/* Submenu item*/
-#sidebar .list-group .sidebar-submenu a {
-    height: 45px;
-    padding-left: 30px;
-}
-.sidebar-submenu {
+#sidebar_menu .list-group a {
+    color: white;
+    background-color: #384045;
     font-size: 0.9rem;
 }
 
-/* Separators */
-.sidebar-separator-title {
-    background-color: #333;
-    height: 35px;
+#sidebar_menu .list-group a i {
+    width: 20px;
+    float: left;
+    vertical-align: baseline;
 }
 
-.sidebar-footer {
-    background-color: #333;
-    color: #999;
+#sidebar_menu .list-group a:hover {
+    color: white;
+    background-color: #454850;
+    font-size: 1rem;
+}
+
+#sidebar_menu .list-group .sidebar_submenu a {
     padding-left: 30px;
-    height: 35px;
-}
-.sidebar-separator {
-    background-color: #333;
-    height: 25px;
-}
-.logo-separator {
-    background-color: #333;
-    height: 60px;
 }
 
 /* Closed submenu icon */
-#sidebar .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+#sidebar_menu .list-group .list-group-item[aria-expanded="false"] .submenu_icon::after {
   content: " \f0d7";
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  display: inline;
-  text-align: right;
   padding-left: 10px;
+  float: right;
 }
+
 /* Opened submenu icon */
-#sidebar .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+#sidebar_menu .list-group .list-group-item[aria-expanded="true"] .submenu_icon::after {
   content: " \f0da";
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  display: inline;
-  text-align: right;
   padding-left: 10px;
+  float: right;
 }
